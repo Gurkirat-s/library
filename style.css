@@ -72,7 +72,7 @@ form {
   transform: translate(-50%, -50%);
   /* box-shadow: 10px 17px 17px 0px rgba(0, 0, 0, 0.1); */
   box-shadow: 15px 16px 29px -20px #3a4759;
-  padding: 2rem;
+  padding: 0.5rem 2rem 2rem;
   border-radius: 10px;
 }
 
@@ -100,4 +100,23 @@ form {
 
 .btn-submit {
   margin: 0 auto;
+}
+
+.close-modal {
+  height: 30px;
+  /* align-self: flex-end; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-modal:hover {
+  cursor: pointer;
+}
+
+.close-modal svg {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
 }
