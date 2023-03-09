@@ -6,8 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div>
+        <h1>Library</h1>
+        <button class="btn btn-add-book">Add Book</button>
+      </div>
+    </header>
+    <main>
+      <div class="form-container">
+        <h3>Add a book to the library</h3>
+        <form class="book-form" id="form">
+          <div class="inputs">
+            <div>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Title"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                id="author"
+                name="author"
+                placeholder="Author"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="number"
+                id="pages"
+                name="pages"
+                placeholder="Pages"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-read">
+            <input type="checkbox" if="read" name="read" />
+            <label for="read">Read</label>
+          </div>
+          <button type="submit" class="btn btn-submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
